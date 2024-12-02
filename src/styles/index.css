@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Poppins:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局样式 */
+@layer base {
+  body {
+    @apply font-sans text-primary bg-[#fdf4ee] min-h-screen;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cardo', serif;
+  }
+}
+
+/* 自定义工具类 */
+@layer utilities {
+  .container-custom {
+    @apply max-w-[1500px] mx-auto px-4;
+  }
+}
+
+/* 测试样式 */
+.app {
+  min-height: 100vh;
+} 
