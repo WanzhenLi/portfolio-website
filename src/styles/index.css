@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 全局样式 */
+/* Global styles */
 @layer base {
   body {
     @apply font-sans text-primary bg-[#fdf4ee] min-h-screen;
@@ -16,14 +16,26 @@
   }
 }
 
-/* 自定义工具类 */
-@layer utilities {
-  .container-custom {
-    @apply max-w-[1500px] mx-auto px-4;
+/* Components */
+@layer components {
+  .hero-split-image-wrap {
+    @apply relative w-full;
+  }
+
+  .hero-split-image {
+    @apply aspect-[4/5] w-full;
+    @apply lg:h-[500px] lg:object-[50%_35%];
+    @apply sm:h-[400px] sm:rounded-[150px];
+  }
+
+  .hero-split-content-left {
+    @apply lg:text-center lg:items-center;
   }
 }
 
-/* 测试样式 */
-.app {
-  min-height: 100vh;
-} 
+/* Custom utilities */
+@layer utilities {
+  .section-container {
+    @apply max-w-[1500px] mx-auto px-4;
+  }
+}

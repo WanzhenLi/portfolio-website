@@ -17,7 +17,7 @@ export class NavItem extends LitElement {
       padding: 20px;
       color: var(--color-primary, #1a1b1f);
       text-decoration: none;
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 500;
       letter-spacing: 0.5px;
       transition: color 0.2s;

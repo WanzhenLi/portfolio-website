@@ -7,10 +7,10 @@ const Header = () => {
 
   return (
     <header className="fixed w-full bg-transparent z-50 py-5">
-      <div className="container-custom">
+      <div className="section-container">
         <div className="flex items-center justify-between">
           <a href="/" className="text-2xl font-bold">
-            <img src={images.logo} alt="Logo" className="h-10" />
+            <img src={images.logo} alt="Portfolio" className="h-10" />
           </a>
 
           <nav className="hidden md:flex items-center space-x-8">
@@ -27,7 +27,7 @@ const Header = () => {
               onClick={() => console.log('Contact clicked')}
             />
           </div>
-
+          
           {/* Mobile menu button */}
           <button
             className="md:hidden p-2"
