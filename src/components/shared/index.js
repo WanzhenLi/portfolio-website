@@ -8,4 +8,4 @@
 export { CustomButton } from './Button';
 export { NavItem } from './NavItem';
 export { SocialLink } from './SocialLink';
-export { ReactNavItem, ReactSocialLink, Button as ReactButton } from './wrappers'; 
+export { ReactNavItem, ReactSocialLink, ReactButton } from './wrappers'; 

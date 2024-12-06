@@ -4,7 +4,8 @@ export class CustomButton extends LitElement {
   static properties = {
     variant: { type: String },
     label: { type: String },
-    disabled: { type: Boolean }
+    disabled: { type: Boolean },
+    href: { type: String }
   };
 
   static styles = css`
@@ -12,6 +13,10 @@ export class CustomButton extends LitElement {
       display: inline-block;
     }
     
+    a {
+      text-decoration: none;
+    }
+
     .button-primary-2 {
       display: flex;
       grid-column-gap: 20px;
@@ -44,7 +49,7 @@ export class CustomButton extends LitElement {
   `;
 
   render() {
-    return html`
+    const buttonContent = html`
       <button
         class="button-primary-2 ${this.variant === 'nav' ? 'nav-button' : ''}"
         ?disabled=${this.disabled}
@@ -53,6 +58,10 @@ export class CustomButton extends LitElement {
         ${this.label}
       </button>
     `;
+
+    return this.href
+      ? html`<a href=${this.href}>${buttonContent}</a>`
+      : buttonContent;
   }
 
   _handleClick(e) {

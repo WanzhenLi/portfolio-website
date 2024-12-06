@@ -12,7 +12,7 @@ export const ReactNavItem = createComponent({
 });
 
 // Wrap Button
-export const Button = createComponent({
+export const ReactButton = createComponent({
   tagName: 'custom-button',
   elementClass: CustomButton,
   react: React
