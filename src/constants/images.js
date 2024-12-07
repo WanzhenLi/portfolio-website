@@ -24,5 +24,6 @@ export const images = {
     mainImage: `${PUBLIC_IMAGES}/hero-image.jpg`,
     textRounded: `${PUBLIC_IMAGES}/hero-text-rounded.png`,
     arrowDown: `${PUBLIC_IMAGES}/arrow-down.svg`,
-  }
+  },
+  about: `${PUBLIC_IMAGES}/about-image.jpeg`,
 };

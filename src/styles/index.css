@@ -6,6 +6,16 @@
 
 /* Global styles */
 @layer base {
+  :root {
+    --tw-color-primary: #291953;
+    --tw-color-secondary: rgba(28, 28, 28, 0.8);
+    --tw-color-secondary-light: rgba(28, 28, 28, 0.7);
+    --tw-color-accent: #FF6B6B;
+    --tw-color-accent-light: rgba(255, 107, 107, 0.3);  /* #FF6B6B with 30% opacity */
+    /* Component specific colors */
+    --nav-accent: #0050bd;  /* Navigation specific accent color */
+  }
+
   body {
     @apply font-sans text-primary bg-[#fdf4ee] min-h-screen;
     font-family: 'Poppins', sans-serif;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ReactSocialLink } from './components/shared';
 import NewHero from './components/sections/NewHero';
+import AboutMe from './components/sections/AboutMe';
 import Header from './components/sections/Header';
 import { images } from './constants/images';
 
@@ -10,12 +11,10 @@ function App() {
       <Header />
       <main>
         <div className="section-container">
-          {/*TODO - FIX: RENAME NEWHERO TO HEROSECTION*/}
           <NewHero
             title="Wanzhen"
             subtitle="and data analyst."
           >
-            {/*TODO - FIX: MOVE THE SOCIALLINK COMPONENTS INSIDE HEROSECTION*/}
             <ReactSocialLink 
               href="https://linkedin.com"
               icon={images.icons.social.linkedin}
@@ -33,6 +32,7 @@ function App() {
               icon={images.icons.social.twitter}
             />
           </NewHero>
+          <AboutMe />
         </div>
       </main>
     </div>

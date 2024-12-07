@@ -15,7 +15,7 @@ export class NavItem extends LitElement {
     .nav-link {
       display: inline-block;
       padding: 20px;
-      color: var(--color-primary, #1a1b1f);
+      color: var(--tw-color-primary, #1a1b1f);
       text-decoration: none;
       font-size: 20px;
       font-weight: 500;
@@ -24,11 +24,11 @@ export class NavItem extends LitElement {
     }
 
     .nav-link:hover {
-      color: var(--color-accent, #0050bd);
+      color: var(--nav-accent, #0050bd);
     }
 
     .active {
-      color: var(--color-accent, #0050bd);
+      color: var(--nav-accent, #0050bd);
     }
   `;
 
