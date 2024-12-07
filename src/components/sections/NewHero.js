@@ -2,8 +2,20 @@ import React from 'react';
 import { ReactSocialLink } from '../shared';
 import { images } from '../../constants/images';
 import styles from './NewHero.module.css';
+import { motion } from 'framer-motion';
 
 export default function NewHero({ title, subtitle, children }) {
+  const fadeInUp = {
+    initial: { 
+      opacity: 0, 
+      y: 20 
+    },
+    animate: { 
+      opacity: 1, 
+      y: 0 
+    }
+  };
+
   return (
     <section className="relative isolate overflow-hidden pt-14" id="hero">
       {/* Background */}
@@ -17,21 +29,50 @@ export default function NewHero({ title, subtitle, children }) {
           md:grid-cols-[1.2fr_1fr] md:gap-x-8 md:gap-y-0
           lg:grid-cols-[1.2fr_1fr_1.2fr] lg:gap-x-12 md:items-start">
           {/* Left Column */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <div className="flex items-center gap-3 mb-6">
+          <motion.div 
+            className="flex flex-col items-center md:items-start text-center md:text-left"
+            initial="initial"
+            animate="animate"
+          >
+            <motion.div 
+              className="flex items-center gap-3 mb-6"
+              variants={fadeInUp}
+              transition={{ duration: 0.5 }}
+            >
               <img src={images.icons.handWave} alt="" className="h-8" />
               <span className="text-lg">Hey, My name is</span>
-            </div>
-            <h1 className={styles.heroTitle}>{title}</h1>
-          </div>
+            </motion.div>
+            <motion.h1 
+              className={styles.heroTitle}
+              variants={fadeInUp}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              {title}
+            </motion.h1>
+          </motion.div>
 
           {/* Middle Column - Image */}
           <div className={styles.imageWrapper}>
-            <img 
-              src={images.hero.mainImage}
-              alt="Profile"
-              className={styles.heroImage}
-            />
+            <motion.div
+              className="w-full h-full"
+              initial={{ opacity: 0, scale: 1.1, borderRadius: '100%' }}
+              animate={{ 
+                opacity: 1, 
+                scale: 1,
+                borderRadius: '100px'
+              }}
+              transition={{ 
+                duration: 0.8,
+                delay: 0.3,
+                ease: "easeOut"
+              }}
+            >
+              <img 
+                src={images.hero.mainImage}
+                alt="Profile"
+                className={styles.heroImage}
+              />
+            </motion.div>
           </div>
 
           {/* Right Column */}
