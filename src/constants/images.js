@@ -1,9 +1,7 @@
-// Import SVG icons
+// Import icons
 import logo from '../assets/icons/logo.png';
 import handWave from '../assets/icons/wave-hand-icon.svg';
 import linkedin from '../assets/icons/linkedin-icon.svg';
-import instagram from '../assets/icons/instagram-icon.svg';
-import twitter from '../assets/icons/twitter-icon.svg';
 import github from '../assets/icons/github-icon.svg';
 
 // Experience icons
@@ -22,7 +20,6 @@ export const images = {
     handWave,
     social: {
       linkedin,
-      instagram,
       github,
     },
     experience: {
