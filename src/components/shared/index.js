@@ -21,6 +21,5 @@ export {
   ReactTimelineItem,
   ReactSectionTitle,
   ReactExperienceInfoCard,
-  ReactExperienceAccordionItem,
-  ReactSectionContent
+  ReactExperienceAccordionItem
 } from './wrappers'; 

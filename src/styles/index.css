@@ -26,3 +26,27 @@
     font-family: 'Cardo', serif;
   }
 }
+
+/* Components */
+@layer components {
+  .hero-split-image-wrap {
+    @apply relative w-full;
+  }
+
+  .hero-split-image {
+    @apply aspect-[4/5] w-full;
+    @apply lg:h-[500px] lg:object-[50%_35%];
+    @apply sm:h-[400px] sm:rounded-[150px];
+  }
+
+  .hero-split-content-left {
+    @apply lg:text-center lg:items-center;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .section-container {
+    @apply max-w-[1500px] mx-auto px-4;
+  }
+}
