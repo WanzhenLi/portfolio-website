@@ -1,18 +1,21 @@
-// Import icons
-import logo from '../assets/icons/logo.png';
-import handWave from '../assets/icons/wave-hand-icon.svg';
-import linkedin from '../assets/icons/linkedin-icon.svg';
-import github from '../assets/icons/github-icon.svg';
+// Common icons
+import logo from '../assets/icons/common/logo.png';
+import handWave from '../assets/icons/common/wave-hand.svg';
+
+// Social icons
+import linkedin from '../assets/icons/social/linkedin.svg';
+import github from '../assets/icons/social/github.svg';
 
 // Experience icons
-import awardIcon from '../assets/icons/experience/experience-icon.svg';
-import projectsIcon from '../assets/icons/experience/projects-icon.svg';
-import webdevIcon from '../assets/icons/experience/available-icon.svg';
-import supportIcon from '../assets/icons/experience/support-icon.svg';
-import accordionIcon from '../assets/icons/experience/accordion-icon.svg';
+import awardIcon from '../assets/icons/experience/award.svg';
+import projectsIcon from '../assets/icons/experience/projects.svg';
+import webdevIcon from '../assets/icons/experience/webdev.svg';
+import supportIcon from '../assets/icons/experience/support.svg';
+import accordionIcon from '../assets/icons/experience/accordion.svg';
 
-// Big images
-const PUBLIC_IMAGES = '/assets/images';
+// Images - import directly from src/assets
+import heroMain from '../assets/images/hero/main.jpg';
+import aboutProfile from '../assets/images/about/profile.jpeg';
 
 export const images = {
   logo,
@@ -31,9 +34,7 @@ export const images = {
     }
   },
   hero: {
-    mainImage: `${PUBLIC_IMAGES}/hero-image.jpg`,
-    textRounded: `${PUBLIC_IMAGES}/hero-text-rounded.png`,
-    arrowDown: `${PUBLIC_IMAGES}/arrow-down.svg`,
+    mainImage: heroMain,
   },
-  about: `${PUBLIC_IMAGES}/about-image.jpeg`,
+  about: aboutProfile,
 };
