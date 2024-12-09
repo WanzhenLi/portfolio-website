@@ -24,7 +24,7 @@ export default function NewHero() {
         aria-hidden="true"
       />
 
-      <div className="section-container py-20 sm:py-40">
+      <div className="section-container py-20 sm:py-40 max-w-[1500px] mx-auto px-6 sm:px-10">
         <div className="grid grid-cols-1 gap-y-12 
           md:grid-cols-[1.2fr_1fr] md:gap-x-8 md:gap-y-0
           lg:grid-cols-[1.2fr_1fr_1.2fr] lg:gap-x-12 md:items-start">
@@ -103,7 +103,7 @@ export default function NewHero() {
             </div>
             
             {/* Social Links */}
-            <div className="flex gap-8 mt-12 justify-center md:justify-start">
+            <div className="flex gap-20 mt-12 justify-center md:justify-start">
               <ReactSocialLink 
                 href="https://linkedin.com/in/wzli-bu"
                 icon={images.icons.social.linkedin}

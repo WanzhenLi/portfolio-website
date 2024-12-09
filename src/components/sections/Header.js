@@ -4,6 +4,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { ReactButton, ReactNavItem } from '../shared/wrappers';
 import { images } from '../../constants/images';
 import { useEffect } from 'react';
+import styles from './layout.module.css';
 
 const navigation = [
   { name: 'Home', href: '#hero' },
@@ -33,7 +34,7 @@ export default function Header() {
     <header className={`fixed w-full z-50 transition-colors duration-300 ${
       isScrolled ? 'bg-white/80 backdrop-blur-sm shadow-sm' : 'bg-transparent'
     }`}>
-      <nav className="section-container flex items-center justify-between py-3 sm:py-1" aria-label="Global">
+      <nav className={`${styles.headerContainer} flex items-center justify-between `} aria-label="Global">
         {/* Logo */}
         <div className="flex">
           <a href="/" className="-m-1.5 p-1.5" onClick={handleNavClick}>

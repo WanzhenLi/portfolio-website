@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ReactTimelineItem, ReactSectionTitle } from '../shared';
+import { ReactTimelineItem, ReactSectionTitle, ReactSectionContent } from '../shared';
 import styles from './Education.module.css';
 
 /**
@@ -86,35 +86,32 @@ export default function Education() {
   );
 
   return (
-    <section id="education" className="py-5 sm:py-10">
-      <div className="section-container">
-        <ReactSectionTitle title="Education" />
+    <ReactSectionContent id="education">
+      <ReactSectionTitle slot="title" title="Education" />
+      <div className="relative w-full overflow-hidden" ref={containerRef}>
+        {/* Timeline Line */}
+        <motion.div 
+          className={styles.timelineLine}
+          style={{ 
+            height: lineHeight,
+            top: TIMELINE_CONFIG.line.topPosition[screenSize],
+          }}
+          initial={{ height: TIMELINE_CONFIG.line.startHeight }}
+          transition={{ duration: 1.5, ease: "easeInOut" }}
+        />
 
-        <div className="relative w-full overflow-hidden" ref={containerRef}>
-          {/* Timeline Line */}
-          <motion.div 
-            className={styles.timelineLine}
-            style={{ 
-              height: lineHeight,
-              top: TIMELINE_CONFIG.line.topPosition[screenSize],
-            }}
-            initial={{ height: TIMELINE_CONFIG.line.startHeight }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
-          />
-
-          {/* Timeline Items Container */}
-          <div className={`${styles.timelineContainer} relative w-full z-[1]`}>
-            {educationData.map((item, index) => (
-              <div
-                key={item.school}
-                className={`${styles.timelineItem}`}
-              >
-                <ReactTimelineItem {...item} />
-              </div>
-            ))}
-          </div>
+        {/* Timeline Items Container */}
+        <div className={`${styles.timelineContainer} relative w-full z-[1]`}>
+          {educationData.map((item, index) => (
+            <div
+              key={item.school}
+              className={`${styles.timelineItem}`}
+            >
+              <ReactTimelineItem {...item} />
+            </div>
+          ))}
         </div>
       </div>
-    </section>
+    </ReactSectionContent>
   );
 } 
