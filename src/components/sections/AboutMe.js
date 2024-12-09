@@ -1,27 +1,24 @@
 import React from 'react';
-import { ReactButton, ReactInfoItem, ReactStatCard } from '../shared';
+import { ReactButton, ReactInfoItem, ReactStatCard, ReactSectionTitle } from '../shared';
 import { images } from '../../constants/images';
 
 export default function AboutMe() {
   return (
-    <section id="about" className="py-10 sm:py-24">
+    <section id="about" className="py-5 sm:py-10">
       <div className="section-container">
-        <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-12 items-start">
+      <ReactSectionTitle title="Biography" />
+        <div className="pt-10 grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6 items-start">
           {/* Left Column - Content */}
           <div className="space-y-12">
             {/* Biography */}
             <div className="space-y-6">
-              <h2 className="text-5xl sm:text-6xl font-serif font-bold text-primary">Biography</h2>
+              
               <div className="space-y-4 text-xl sm:text-2xl text-secondary">
                 <p>
-                  I am a web developer and web designer and I'm from Las Vegas. Allowing me to work on 
-                  projects from concept until the very moment we hit publish. Unique layouts, integrations, 
-                  and great typography are what I focus on when working on websites.
+                  Self-introduction text paragraph 1.
                 </p>
                 <p>
-                  Delivering work within time and budget which meets client's requirements is our motto. 
-                  lorem Ipsum has been the industry's standard dummy text ever since an unknown printer 
-                  took a galley.
+                  Self-introduction text paragraph 2.
                 </p>
               </div>
             </div>
@@ -43,7 +40,7 @@ export default function AboutMe() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:place-items-start place-items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 sm:gap-16 sm:place-items-start place-items-center w-full max-w-[600px]">
                 <ReactStatCard number="5" label="Years of Experience" />
                 <ReactStatCard number="90+" label="Happy Clients" />
                 <ReactStatCard number="135+" label="Project Completed" />

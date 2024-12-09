@@ -36,11 +36,11 @@ export class StatCard extends LitElement {
 
     @media (min-width: 1024px) {
       .number {
-        font-size: 56px;
+        font-size: 48px;
       }
 
       .label {
-        font-size: 20px;
+        font-size: 18px;
       }
     }
   `;

@@ -4,7 +4,7 @@ import { images } from '../../constants/images';
 import styles from './NewHero.module.css';
 import { motion } from 'framer-motion';
 
-export default function NewHero({ title, subtitle, children }) {
+export default function NewHero() {
   const fadeInUp = {
     initial: { 
       opacity: 0, 
@@ -47,7 +47,7 @@ export default function NewHero({ title, subtitle, children }) {
               variants={fadeInUp}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              {title}
+              Wanzhen
             </motion.h1>
           </motion.div>
 
@@ -95,7 +95,7 @@ export default function NewHero({ title, subtitle, children }) {
                 </h2>
               </div>
               <div className="space-y-4">
-                <p className="sm:text-2xl text-lg text-secondary">{subtitle}</p>
+                <p className="sm:text-2xl text-lg text-secondary">and data analyst.</p>
                 <p className="sm:text-2xl text-lg text-secondary">
                   Passionate about crafting elegant web solutions and turning ideas into interactive experiences.
                 </p>
@@ -104,7 +104,14 @@ export default function NewHero({ title, subtitle, children }) {
             
             {/* Social Links */}
             <div className="flex gap-8 mt-12 justify-center md:justify-start">
-              {children}
+              <ReactSocialLink 
+                href="https://linkedin.com/in/wzli-bu"
+                icon={images.icons.social.linkedin}
+              />
+              <ReactSocialLink 
+                href="https://github.com/WanzhenLi"
+                icon={images.icons.social.github}
+              />
             </div>
           </div>
         </div>

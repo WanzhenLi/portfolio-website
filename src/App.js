@@ -1,9 +1,9 @@
 import React from 'react';
-import { ReactSocialLink } from './components/shared';
 import NewHero from './components/sections/NewHero';
 import AboutMe from './components/sections/AboutMe';
+import Education from './components/sections/Education';
+import Experiences from './components/sections/Experiences';
 import Header from './components/sections/Header';
-import { images } from './constants/images';
 
 function App() {
   return (
@@ -11,28 +11,10 @@ function App() {
       <Header />
       <main>
         <div className="section-container">
-          <NewHero
-            title="Wanzhen"
-            subtitle="and data analyst."
-          >
-            <ReactSocialLink 
-              href="https://linkedin.com"
-              icon={images.icons.social.linkedin}
-            />
-            <ReactSocialLink 
-              href="https://instagram.com"
-              icon={images.icons.social.instagram}
-            />
-            <ReactSocialLink 
-              href="https://facebook.com"
-              icon={images.icons.social.facebook}
-            />
-            <ReactSocialLink 
-              href="https://twitter.com"
-              icon={images.icons.social.twitter}
-            />
-          </NewHero>
+          <NewHero/>
           <AboutMe />
+          <Education />
+          <Experiences />
         </div>
       </main>
     </div>

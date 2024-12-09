@@ -8,4 +8,18 @@
 export { CustomButton } from './Button';
 export { NavItem } from './NavItem';
 export { SocialLink } from './SocialLink';
-export { ReactNavItem, ReactSocialLink, ReactButton, ReactInfoItem, ReactStatCard } from './wrappers'; 
+export { TimelineItem } from './TimelineItem';
+export { SectionTitle } from './SectionTitle';
+export { ExperienceInfoCard } from './ExperienceInfoCard';
+export { ExperienceAccordionItem } from './ExperienceAccordionItem';
+export { 
+  ReactNavItem, 
+  ReactSocialLink, 
+  ReactButton, 
+  ReactInfoItem, 
+  ReactStatCard,
+  ReactTimelineItem,
+  ReactSectionTitle,
+  ReactExperienceInfoCard,
+  ReactExperienceAccordionItem
+} from './wrappers'; 

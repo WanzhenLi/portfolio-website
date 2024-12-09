@@ -1,10 +1,17 @@
 // Import SVG icons
-import logo from '../assets/icons/logo.svg';
+import logo from '../assets/icons/logo.png';
 import handWave from '../assets/icons/wave-hand-icon.svg';
 import linkedin from '../assets/icons/linkedin-icon.svg';
 import instagram from '../assets/icons/instagram-icon.svg';
-import facebook from '../assets/icons/facebook-icon.svg';
 import twitter from '../assets/icons/twitter-icon.svg';
+import github from '../assets/icons/github-icon.svg';
+
+// Experience icons
+import awardIcon from '../assets/icons/experience/experience-icon.svg';
+import projectsIcon from '../assets/icons/experience/projects-icon.svg';
+import webdevIcon from '../assets/icons/experience/available-icon.svg';
+import supportIcon from '../assets/icons/experience/support-icon.svg';
+import accordionIcon from '../assets/icons/experience/accordion-icon.svg';
 
 // Big images
 const PUBLIC_IMAGES = '/assets/images';
@@ -16,8 +23,14 @@ export const images = {
     social: {
       linkedin,
       instagram,
-      facebook,
-      twitter,
+      github,
+    },
+    experience: {
+      award: awardIcon,
+      projects: projectsIcon,
+      webdev: webdevIcon,
+      support: supportIcon,
+      accordion: accordionIcon
     }
   },
   hero: {

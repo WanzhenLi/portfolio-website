@@ -8,6 +8,7 @@
 @layer base {
   :root {
     --tw-color-primary: #291953;
+    --tw-color-primary-rgb: 41, 25, 83;  /* RGB values of #291953 */
     --tw-color-secondary: rgba(28, 28, 28, 0.8);
     --tw-color-secondary-light: rgba(28, 28, 28, 0.7);
     --tw-color-accent: #FF6B6B;

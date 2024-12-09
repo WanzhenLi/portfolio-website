@@ -5,6 +5,10 @@ import { CustomButton } from './Button';
 import { SocialLink } from './SocialLink';
 import { InfoItem } from './InfoItem';
 import { StatCard } from './StatCard';
+import { TimelineItem } from './TimelineItem';
+import { SectionTitle } from './SectionTitle';
+import { ExperienceInfoCard } from './ExperienceInfoCard';
+import { ExperienceAccordionItem } from './ExperienceAccordionItem';
 
 // Wrap NavItem
 export const ReactNavItem = createComponent({
@@ -38,5 +42,33 @@ export const ReactInfoItem = createComponent({
 export const ReactStatCard = createComponent({
   tagName: 'stat-card',
   elementClass: StatCard,
+  react: React
+});
+
+// Wrap TimelineItem
+export const ReactTimelineItem = createComponent({
+  tagName: 'timeline-item',
+  elementClass: TimelineItem,
+  react: React
+});
+
+// Wrap SectionTitle
+export const ReactSectionTitle = createComponent({
+  tagName: 'section-title',
+  elementClass: SectionTitle,
+  react: React
+});
+
+// Wrap ExperienceInfoCard
+export const ReactExperienceInfoCard = createComponent({
+  tagName: 'experience-info-card',
+  elementClass: ExperienceInfoCard,
+  react: React
+});
+
+// Wrap ExperienceAccordionItem
+export const ReactExperienceAccordionItem = createComponent({
+  tagName: 'experience-accordion-item',
+  elementClass: ExperienceAccordionItem,
   react: React
 }); 

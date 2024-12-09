@@ -8,8 +8,8 @@ import { useEffect } from 'react';
 const navigation = [
   { name: 'Home', href: '#hero' },
   { name: 'About Me', href: '#about' },
-  { name: 'Work', href: '#work' },
-  { name: 'Experience', href: '#experience' },
+  { name: 'Experience', href: '#education' },
+  { name: 'Projects', href: '#projects' },
 ];
 
 export default function Header() {
@@ -37,7 +37,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex">
           <a href="/" className="-m-1.5 p-1.5" onClick={handleNavClick}>
-            <img className="h-8" src={images.logo} alt="Portfolio" />
+            <img className="h-16" src={images.logo} alt="Portfolio" />
           </a>
         </div>
 
