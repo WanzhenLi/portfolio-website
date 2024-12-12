@@ -28,6 +28,7 @@ import foxconnLogo from '../assets/icons/trusted-by/foxconn-logo.png';
 import geelyLogo from '../assets/icons/trusted-by/geely-logo.png';
 import jmoLogo from '../assets/icons/trusted-by/jmo-logo.png';
 import wisewayLogo from '../assets/icons/trusted-by/wiseway-logo.png';
+import bmwLogo from '../assets/icons/trusted-by/bmw-logo.png';
 
 export const images = {
   logo,
@@ -60,4 +61,5 @@ export const images = {
   geelyLogo,
   jmoLogo,
   wisewayLogo,
+  bmwLogo,
 };

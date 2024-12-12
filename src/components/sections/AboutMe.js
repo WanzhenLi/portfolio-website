@@ -84,6 +84,7 @@ export default function AboutMe() {
     { name: 'Volkswagen', logo: images.volkswagenLogo },
     { name: "FoxConn", logo: images.foxconnLogo },
     { name: 'weber Shandwick', logo: images.wsLogo },
+    { name: 'BMW', logo: images.bmwLogo },
     { name: 'Geely', logo: images.geelyLogo },
     { name: 'synergies', logo: images.synergiesLogo },
   ];

@@ -10,7 +10,7 @@ const skillsData = [
   {
     title: "Web Development",
     icon: "🌐",
-    description: "React, LitElement, Node.js, Next.js"
+    description: "React, LitElement, Node.js, Next.js, HTML5/CSS, Framer Motion, TailwindCSS, Shopify Liquid"
   },
   {
     title: "Cloud Computing",
