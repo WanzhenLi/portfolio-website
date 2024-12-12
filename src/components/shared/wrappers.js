@@ -9,6 +9,7 @@ import { TimelineItem } from './TimelineItem';
 import { SectionTitle } from './SectionTitle';
 import { ExperienceInfoCard } from './ExperienceInfoCard';
 import { ExperienceAccordionItem } from './ExperienceAccordionItem';
+import { SkillCategory } from './SkillCategory';
 
 // Wrap NavItem
 export const ReactNavItem = createComponent({
@@ -70,6 +71,13 @@ export const ReactExperienceInfoCard = createComponent({
 export const ReactExperienceAccordionItem = createComponent({
   tagName: 'experience-accordion-item',
   elementClass: ExperienceAccordionItem,
+  react: React
+});
+
+// Wrap SkillCategory
+export const ReactSkillCategory = createComponent({
+  tagName: 'skill-category',
+  elementClass: SkillCategory,
   react: React
 });
 

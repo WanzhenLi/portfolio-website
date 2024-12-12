@@ -24,3 +24,5 @@ export {
   ReactExperienceAccordionItem,
   ReactProjectCard
 } from './wrappers'; 
+export { SkillCategory } from './SkillCategory';
+export { ReactSkillCategory } from './wrappers'; 
