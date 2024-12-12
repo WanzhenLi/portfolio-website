@@ -86,7 +86,7 @@ export default function Education() {
   );
 
   return (
-    <section id="education" className="py-5 sm:py-10">
+    <section id="education" className="py-5 sm:py-10 scroll-mt-20">
       <div className="section-container">
         <ReactSectionTitle title="Education" />
 

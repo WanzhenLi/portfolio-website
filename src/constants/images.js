@@ -16,6 +16,18 @@ import accordionIcon from '../assets/icons/experience/accordion.svg';
 // Images - import directly from src/assets
 import heroMain from '../assets/images/hero/main.jpg';
 import aboutProfile from '../assets/images/about/profile.jpeg';
+// Project images
+import project1 from '../assets/images/projects/project1.jpg';
+
+// Trusted by logos
+import mercedesLogo from '../assets/icons/trusted-by/mercedes-benz-seeklogo.png';
+import volkswagenLogo from '../assets/icons/trusted-by/volkswagen-logo.png';
+import wsLogo from '../assets/icons/trusted-by/ws-logo.png';
+import synergiesLogo from '../assets/icons/trusted-by/synergies-logo.png';
+import foxconnLogo from '../assets/icons/trusted-by/foxconn-logo.png';
+import geelyLogo from '../assets/icons/trusted-by/geely-logo.png';
+import jmoLogo from '../assets/icons/trusted-by/jmo-logo.png';
+import wisewayLogo from '../assets/icons/trusted-by/wiseway-logo.png';
 
 export const images = {
   logo,
@@ -37,4 +49,15 @@ export const images = {
     mainImage: heroMain,
   },
   about: aboutProfile,
+  projects: {
+    project1,
+  },
+  mercedesLogo,
+  volkswagenLogo,
+  wsLogo,
+  synergiesLogo,
+  foxconnLogo,
+  geelyLogo,
+  jmoLogo,
+  wisewayLogo,
 };

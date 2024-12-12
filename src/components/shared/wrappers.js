@@ -71,4 +71,21 @@ export const ReactExperienceAccordionItem = createComponent({
   tagName: 'experience-accordion-item',
   elementClass: ExperienceAccordionItem,
   react: React
-}); 
+});
+
+// Project Card wrapper
+export const ReactProjectCard = ({ title, description, imageUrl, techStack, demoLink, githubLink }) => {
+  React.useEffect(() => {
+    // Ensure the custom element is defined
+    import('./ProjectCard');
+  }, []);
+
+  return React.createElement('project-card', {
+    title,
+    description,
+    imageUrl,
+    techStack: JSON.stringify(techStack),
+    demoLink,
+    githubLink
+  });
+}; 

@@ -1,0 +1,15 @@
+.highlightedText {
+  display: inline-block;
+  position: relative;
+  padding: 0 0.1em;
+}
+
+.highlightedText svg {
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .highlightedText svg {
+    height: 0.5em;
+  }
+} 
