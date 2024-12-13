@@ -89,10 +89,17 @@ export class ExperienceAccordionItem extends LitElement {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.3s ease-in-out, padding-top 0.3s ease-in-out;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        text-align: left;
+      }
     }
 
     .content.open {
-      max-height: 500px;
+      max-height: 1200px;
       padding-top: 1rem;
     }
 
@@ -119,6 +126,8 @@ export class ExperienceAccordionItem extends LitElement {
     .bullet-points li:last-child {
       margin-bottom: 0;
     }
+
+    
   `;
 
   render() {
