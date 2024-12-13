@@ -99,12 +99,15 @@ export default function AboutMe() {
             {/* Biography */}
             <div className="space-y-6">
               
-              <div className="space-y-4 text-xl sm:text-2xl text-secondary">
+              <div className="space-y-4 text-xl sm:text-xl text-secondary text-justify">
                 <p>
-                  Self-introduction text paragraph 1.
+                  Believe it or not, my journey into tech started far from anything remotely technical. My undergraduate days were spent diving into Chomsky and The Magic Mountain as a German Language and Literature major. After graduation, I followed a traditional path into market research and PR consultancy at German companies. Yet, as I delved deeper into my work, I felt an ever-growing desire to sharpen my skills in data processing and analysis—to uncover deeper insights and drive real impact. That realization led me to Boston University, where I embarked on a new chapter—a journey that marked my first step into the world of tech.
                 </p>
                 <p>
-                  Self-introduction text paragraph 2.
+                  After graduating from BU in 2023, I joined an AI startup as a data analyst. Working there completely reshaped my path. Initially focused on data analysis and predictive modeling, I was soon drawn into the dynamic world of front-end component development, back-end microservices, and algorithm design—essentially taking on the role of a full-stack software engineer. Along the way, I discovered my passion for software engineering, front-end development, and cutting-edge AI technologies. My natural curiosity, love for learning new tools, and problem-solving mindset fueled my growth, and I feel incredibly fortunate to have found a career that I’m deeply passionate about and excited to explore further.
+                </p>
+                <p>
+                  If you're a potential employer intrigued by my story, feel free to download my resume to learn more. And if you’re curious about my project, have feedback, or want to collaborate, just send me an email—I’d love to hear from you!
                 </p>
               </div>
             </div>
@@ -114,8 +117,10 @@ export default function AboutMe() {
               {/* Contact Info */}
               <div className="space-y-4">
                 <ReactInfoItem label="Name:" value="Wanzhen Li" />
-                <ReactInfoItem label="Email:" value="wanzhenli@gmail.com" />
-                <ReactInfoItem label="From:" value="Natick, MA" />
+                <ReactInfoItem label="Preferred Name:" value="Phoenix" />
+                <ReactInfoItem label="Email:" value="phinneyisamazing@gmail.com" />
+                <ReactInfoItem label="Where:" value="Boston, MA" />
+                <ReactInfoItem label="Employment Status:" value="Open to work" />
                 <div className="mt-8 flex justify-center md:justify-start">
                   <ReactButton
                     variant="primary"
@@ -126,12 +131,12 @@ export default function AboutMe() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 sm:gap-16 sm:place-items-start place-items-center w-full max-w-[600px]">
-                <ReactStatCard number="5" label="Years of Experience" />
-                <ReactStatCard number="90+" label="Happy Clients" />
-                <ReactStatCard number="135+" label="Project Completed" />
-                <ReactStatCard number="25" label="Get Awards" />
-              </div>
+              {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 sm:gap-16 sm:place-items-start place-items-center w-full max-w-[600px]"> */}
+                {/* <ReactStatCard number="5" label="Years of Experience" /> */}
+                {/* <ReactStatCard number="90+" label="Happy Clients" /> */}
+                {/* <ReactStatCard number="135+" label="Project Completed" /> */}
+                {/* <ReactStatCard number="25" label="Get Awards" /> */}
+              {/* </div> */}
             </div>
           </div>
 

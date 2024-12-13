@@ -14,8 +14,8 @@ import supportIcon from '../assets/icons/experience/support.svg';
 import accordionIcon from '../assets/icons/experience/accordion.svg';
 
 // Images - import directly from src/assets
-import heroMain from '../assets/images/hero/main.jpg';
-import aboutProfile from '../assets/images/about/profile.jpeg';
+import heroMain from '../assets/images/hero/hero-image.jpg';
+import aboutProfile from '../assets/images/about/headshot.jpg';
 // Project images
 import project1 from '../assets/images/projects/project1.jpg';
 
