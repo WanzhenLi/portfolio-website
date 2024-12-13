@@ -6,10 +6,10 @@ import { images } from '../../constants/images';
 import { useEffect } from 'react';
 
 const navigation = [
-  { name: 'Home', href: '#hero' },
-  { name: 'About Me', href: '#about' },
-  { name: 'Experience', href: '#education' },
-  { name: 'Projects', href: '#projects' },
+  { name: 'Home', href: '/#hero' },
+  { name: 'About Me', href: '/#about' },
+  { name: 'Experience', href: '/#education' },
+  { name: 'Projects', href: '/#projects' },
 ];
 
 export default function Header() {

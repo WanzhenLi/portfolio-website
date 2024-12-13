@@ -6,10 +6,12 @@
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
     "@lit/react": "^1.0.0",
+    "@tailwindcss/typography": "^0.5.15",
     "framer-motion": "^11.13.1",
     "lit": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^7.0.2",
     "react-scripts": "^5.0.1"
   },
   "devDependencies": {
