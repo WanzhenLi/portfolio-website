@@ -14,8 +14,12 @@ export class InfoItem extends LitElement {
     
     .info-item {
       display: flex;
+      flex-wrap: wrap;
       align-items: baseline;
       gap: 0.5rem;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      max-width: 100%;
     }
 
     .label {
@@ -29,6 +33,23 @@ export class InfoItem extends LitElement {
       font-family: 'Poppins', sans-serif;
       font-size: 22px;
       color: var(--tw-color-secondary-light);
+      word-break: break-all;
+      flex: 1;
+      min-width: 0;
+    }
+
+    @media (max-width: 768px) {
+      .info-item {
+        flex-direction: column;
+      }
+      
+      .label {
+        font-size: 22px;
+      }
+      
+      .value {
+        font-size: 18px;
+      }
     }
   `;
 

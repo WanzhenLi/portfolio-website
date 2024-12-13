@@ -95,6 +95,7 @@ export default function NewHero() {
                 </h2>
               </div>
               <div className="space-y-4">
+                {/* TODO: WEB DEVELOPER SHOULD BE REVISITED! */}
                 <p className="sm:text-2xl text-lg text-secondary">web developer, data scientist, AI engineer...</p>
                 <p className="sm:text-2xl text-lg text-secondary">
                 Passionate about transforming ideas into impactful web and AI solutions. Fueled by curiosity and a love for solving complex challenges.

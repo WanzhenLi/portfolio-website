@@ -16,9 +16,9 @@ const InfiniteLogoScroll = ({ companies }) => {
     };
 
     calculateWidth();
-    
+
     window.addEventListener('resize', calculateWidth);
-    
+
     const timer = setTimeout(calculateWidth, 500);
 
     return () => {
@@ -31,11 +31,11 @@ const InfiniteLogoScroll = ({ companies }) => {
 
   return (
     <div className="overflow-hidden relative" ref={scrollRef}>
-      <motion.div 
+      <motion.div
         className="flex gap-8 items-center"
         initial={{ x: 0 }}
         animate={{ x: -width }}
-        transition={{ 
+        transition={{
           x: {
             repeat: Infinity,
             repeatType: "loop",
@@ -93,13 +93,13 @@ export default function AboutMe() {
     <section id="about" className="py-5 sm:py-10 scroll-mt-20">
       <div className="section-container">
         <ReactSectionTitle title="Biography" />
-        <div className="pt-10 grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6 items-start">
+        <div className="pt-6 sm:pt-10 grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6 items-start">
           {/* Left Column - Content */}
           <div className="space-y-12">
             {/* Biography */}
             <div className="space-y-6">
-              
-              <div className="space-y-4 text-xl sm:text-xl text-secondary text-justify">
+
+              <div className="space-y-4 text-lg sm:text-xl text-secondary text-justify">
                 <p>
                   Believe it or not, my journey into tech started far from anything remotely technical. My undergraduate days were spent diving into Chomsky and The Magic Mountain as a German Language and Literature major. After graduation, I followed a traditional path into market research and PR consultancy at German companies. Yet, as I delved deeper into my work, I felt an ever-growing desire to sharpen my skills in data processing and analysis—to uncover deeper insights and drive real impact. That realization led me to Boston University, where I embarked on a new chapter—a journey that marked my first step into the world of tech.
                 </p>
@@ -112,46 +112,45 @@ export default function AboutMe() {
               </div>
             </div>
 
-            {/* Info and Stats Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              {/* Contact Info */}
-              <div className="space-y-4">
-                <ReactInfoItem label="Name:" value="Wanzhen Li" />
-                <ReactInfoItem label="Preferred Name:" value="Phoenix" />
-                <ReactInfoItem label="Email:" value="phinneyisamazing@gmail.com" />
-                <ReactInfoItem label="Where:" value="Boston, MA" />
-                <ReactInfoItem label="Employment Status:" value="Open to work" />
-                <div className="mt-8 flex justify-center md:justify-start">
-                  <ReactButton
-                    variant="primary"
-                    label="Download CV"
-                    href="#"
-                  />
-                </div>
-              </div>
 
-              {/* Stats */}
-              {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 sm:gap-16 sm:place-items-start place-items-center w-full max-w-[600px]"> */}
-                {/* <ReactStatCard number="5" label="Years of Experience" /> */}
-                {/* <ReactStatCard number="90+" label="Happy Clients" /> */}
-                {/* <ReactStatCard number="135+" label="Project Completed" /> */}
-                {/* <ReactStatCard number="25" label="Get Awards" /> */}
-              {/* </div> */}
-            </div>
           </div>
 
           {/* Right Column - Image */}
           <div className="relative">
-            <img 
-              src={images.about} 
+            <img
+              src={images.about}
               alt=""
               className="w-full max-w-[400px] mx-auto aspect-[3/4] object-cover rounded-[2rem]"
             />
           </div>
         </div>
 
+        {/* Contact Info */}
+        <div className="grid grid-cols-1 pt-10 md:grid-cols-2 md:gap-12">
+          {/* Contact Info - 1 */}
+          <div className="space-y-4">
+            <ReactInfoItem label="Name:" value="Wanzhen Li" />
+            <ReactInfoItem label="Preferred Name:" value="Phoenix" />
+            <ReactInfoItem label="Email:" value="phinneyisamazing@gmail.com" />
+          </div>
+
+          {/* Contact Info - 2 */}
+          <div className="space-y-4 mt-4 md:mt-0">
+            <ReactInfoItem label="Location:" value="Boston, MA" />
+            <ReactInfoItem label="Employment Status:" value="Open to work" />
+          </div>
+        </div>
+
+        <div className="mt-8 flex justify-center md:justify-start">
+          <ReactButton
+            variant="primary"
+            label="Download CV"
+            href="#"
+          />
+        </div>
+
         {/* Trusted By Section */}
-        <div className="mt-20">
+        <div className="pb-10 md:pb-0 mt-10 md:mt-20">
           {/* Title */}
           <div className="md:text-left text-center md:pl-12 mb-12">
             <h2 className="text-3xl md:text-4xl font-bold relative inline-block">
