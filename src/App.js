@@ -8,6 +8,7 @@ import Header from './components/sections/Header';
 import Projects from './components/sections/Projects';
 import Skills from './components/sections/Skills';
 import ProjectDetail from './components/pages/ProjectDetail';
+import Footer from './components/sections/Footer';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           } />
           <Route path="/projects/:slug" element={<ProjectDetail />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
