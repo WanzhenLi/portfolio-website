@@ -144,8 +144,9 @@ export default function AboutMe() {
         <div className="mt-8 flex justify-center md:justify-start">
           <ReactButton
             variant="primary"
-            label="Download CV"
-            href="#"
+            label="Download Resume"
+            href="/assets/documents/Wanzhen_Li_Resume.pdf"
+            download="Wanzhen_Li_Resume.pdf"
           />
         </div>
 

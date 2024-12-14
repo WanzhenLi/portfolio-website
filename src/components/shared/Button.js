@@ -5,7 +5,8 @@ export class CustomButton extends LitElement {
     variant: { type: String },
     label: { type: String },
     disabled: { type: Boolean },
-    href: { type: String }
+    href: { type: String },
+    download: { type: String }
   };
 
   static styles = css`
@@ -18,6 +19,7 @@ export class CustomButton extends LitElement {
     }
 
     .button-primary-2 {
+      position: relative;
       display: flex;
       grid-column-gap: 20px;
       grid-row-gap: 20px;
@@ -34,17 +36,26 @@ export class CustomButton extends LitElement {
       font-weight: 700;
       line-height: 1.5em;
       text-decoration: none;
-      transition: background-color 0.3s ease-in-out;
+      transition: box-shadow 0.3s ease-in-out;
       cursor: pointer;
     }
 
     .button-primary-2:hover {
-      background-color: #fff;
-      border-color: #291953;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(41, 25, 83, 0.15);
+      background-color: #fddb3a;
     }
 
     .button-primary-2.nav-button {
       padding: 8px 30px;
+      font-size: 18px;
+    }
+
+    /* Disabled state */
+    .button-primary-2[disabled] {
+      opacity: 0.6;
+      cursor: not-allowed;
+      pointer-events: none;
     }
   `;
 
@@ -60,7 +71,7 @@ export class CustomButton extends LitElement {
     `;
 
     return this.href
-      ? html`<a href=${this.href}>${buttonContent}</a>`
+      ? html`<a href=${this.href} ?download=${this.download}>${buttonContent}</a>`
       : buttonContent;
   }
 
