@@ -18,6 +18,8 @@ import heroMain from '../assets/images/hero/hero-image.jpg';
 import aboutProfile from '../assets/images/about/headshot.jpg';
 // Project images
 import project1 from '../assets/images/projects/project1.jpg';
+import findocsRag from '../assets/images/projects/findocs_rag.jpg';
+import pictomercHero from '../assets/images/projects/pictomerch_hero.jpg';
 
 // Trusted by logos
 import mercedesLogo from '../assets/icons/trusted-by/mercedes-benz-seeklogo.png';
@@ -52,6 +54,8 @@ export const images = {
   about: aboutProfile,
   projects: {
     project1,
+    findocsRag,
+    pictomercHero,
   },
   mercedesLogo,
   volkswagenLogo,

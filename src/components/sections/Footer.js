@@ -39,14 +39,14 @@ export default function Footer() {
             icon={images.icons.social.linkedin}
           />
           <ReactSocialLink 
-            href="https://github.com/WanzhenLi"
+            href="https://github.com/WanzhenLi/portfolio-website"
             icon={images.icons.social.github}
           />
         </div>
 
         {/* Copyright */}
         <p className="mt-10 text-center text-sm text-[#666666]">
-          &copy; {new Date().getFullYear()} Wanzhen Li. All rights reserved.
+          &copy; {new Date().getFullYear()} Phoneix Li. All rights reserved.
         </p>
       </div>
     </footer>

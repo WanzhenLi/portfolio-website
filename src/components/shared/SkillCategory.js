@@ -17,7 +17,7 @@ export class SkillCategory extends LitElement {
       backdrop-filter: blur(10px);
       border-radius: 1rem;
       padding: 1.5rem;
-      height: 210px;
+      height: 260px;
       display: flex;
       flex-direction: column;
       transition: all 0.3s ease;
@@ -52,12 +52,12 @@ export class SkillCategory extends LitElement {
 
     .description {
       color: var(--tw-color-secondary);
-      font-size: 1.25rem;
-      line-height: 1.5;
+      font-size: 1.0rem;
+      line-height: 1.45;
       font-family: 'Poppins', serif;
       overflow: hidden;
       display: -webkit-box;
-      -webkit-line-clamp: 3;
+      -webkit-line-clamp: 6;
       -webkit-box-orient: vertical;
       margin-top: 0.5rem;
     }
@@ -65,16 +65,17 @@ export class SkillCategory extends LitElement {
     @media (max-width: 640px) {
       .skill-card {
         padding: 1.25rem;
-        height: 180px;
+        height: 230px;
       }
 
       .title {
-        font-size: 1.35rem;
+        font-size: 1.25rem;
       }
 
       .description {
-        font-size: 1.1rem;
-        line-height: 1.5;
+        font-size: 0.92rem;
+        line-height: 1.45;
+        -webkit-line-clamp: 6;
       }
     }
   `;

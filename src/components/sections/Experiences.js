@@ -27,15 +27,14 @@ const experienceData = {
   ],
   experiences: [
     {
-      title: "Software Engineer",
+      title: "Data Scientist",
       company: "Synergies Intelligent Systems, Inc.",
       period: "Mar 2024 - Present",
-      description: "Mainly contributed to the development of 2 key platforms, including an AI-powered home improvement online platform and an automated quotation system for machining parts",
+      description: "",
       bulletPoints: [
-        "Designed and implemented UI/UX for interactive web interfaces and intuitive customer workflows, including features like AI-powered product rendering, real-time price comparison.",
-        "Built scalable and efficient full-stack architectures using React, Node.js, and MongoDB, ensuring seamless dataflow and responsive performance across platforms, containerizing the development and deployment environments with Docker.",
-        "Developed and deployed AI-powered microservices with Python Flask, using advanced models like Chat-GPT, Stable Diffusion, and CADquery to enable functionalities such as AI chatbots, AI Render, 3D CAD file analysis, and automated pricing calculations.",
-        "Worked closely with cross-functional teams, including product managers and designers, to ensure seamless integration of AI features into user-facing platforms, aligning technical implementation with business goals."
+        "Worked with product and client stakeholders to frame AI problems, Reviewed papers and open-source repos, tested candidate models, and chose cost-effective, quick-to-deploy solutions; shipped week-scale MVPs to prove feasibility before full builds.",
+        "Delivered multiple AI features: For a furniture e-commerce site, integrated a open-source LLM chatbot for customer support and built a “try in your space” AI image inpainting feature using Stable Diffusion; For a machined parts platform, created an auto-quotation model and explored a machining drawing→3D CAD feature to streamline quoting and design review.",
+        "Collaborated with engineers to deliver Python services (FastAPI/Flask) with logging and metrics; deployed prototypes on Vercel/Hostinger as appropriate, coordinated API contracts, and supported smooth handoffs for iteration."
       ]
     },
     {
@@ -44,9 +43,9 @@ const experienceData = {
       period: "September 2023 - Mar 2024",
       description: "",
       bulletPoints: [
-        "Data Management \& Visualization: Directed the integration and cleansing of financial data for Foxconn's Longhua factory, crafting interactive dashboards that distilled trends and actionable insights, thereby enhancing data-driven decision-making processes.",
-        "Predictive Analytics \& Machine Learning: Implemented advanced predictive time-series models (S-ARIMA, LSTM, GBRT) with Python to forecast financial outcomes and detect anomalies with up to 99.97\% accuracy, substantially aiding in strategic planning and operational efficiency.",
-
+        "Combined production and financial data from several systems into clean, standardized datasets; built executive KPI dashboards to track margin, inventory turns, and anomaly alerts for decision-making.",
+        "Developed time-series forecasting & anomaly detection (SARIMA/Prophet/LSTM in Python) to support planning and working-capital optimization; briefed Finance and Operations on insights and suggested actions for their decision-making.",
+        "Automated ETL with SQL (Athena/S3) and Python; added data-quality checks (freshness, completeness), reducing manual reporting effort and improving reliability of leadership reporting."
       ]
     },
     {

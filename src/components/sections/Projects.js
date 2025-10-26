@@ -7,19 +7,19 @@ import { images } from '../../constants/images';
 const projectsData = [
   {
     id: 1,
-    title: "AI-Powered Chat Application",
-    description: "A real-time chat application built with React and OpenAI's GPT-4o API, featuring intelligent response generation and conversation memory.",
-    imageUrl: images.projects.project1,
-    techStack: ["React", "Node.js", "OpenAI API"],
-    slug: "simulink-model-design"
+    title: "FinDocs RAG System",
+    description: "Building a Financial Document Q&A System with RAG - My Journey with LangGraph and LLMs",
+    imageUrl: images.projects.findocsRag,
+    techStack: ["LangChain", "LangGraph", "ChromaDB", "Streamlit", "Python"],
+    slug: "findocs-rag-system"
   },
   {
     id: 2,
-    title: "AI-Powered Chat Application",
-    description: "A real-time chat application built with React and OpenAI's GPT-4o API, featuring intelligent response generation and conversation memory.",
-    imageUrl: images.projects.project1,
-    techStack: ["React", "Node.js", "OpenAI API"],
-    slug: "ai-chat-application"
+    title: "PicToMerch: AI-Powered Photo Restyle Web App",
+    description: "Turning a user's photo into merch-ready art in one click. ",
+    imageUrl: images.projects.pictomercHero,
+    techStack: ["React", "Next.js", "Node.js", "Typescript", "Vercel", "Supabase", "OpenAI API"],
+    slug: "pic-to-merch-web-app"
   },
   {
     id: 3,

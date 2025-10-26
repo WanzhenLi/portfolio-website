@@ -104,7 +104,7 @@ export default function AboutMe() {
                   Believe it or not, my journey into tech started far from anything remotely technical. My undergraduate days were spent diving into Chomsky and The Magic Mountain as a German Language and Literature major. After graduation, I followed a traditional path into market research and PR consultancy at German companies. Yet, as I delved deeper into my work, I felt an ever-growing desire to sharpen my skills in data processing and analysis—to uncover deeper insights and drive real impact. That realization led me to Boston University, where I embarked on a new chapter—a journey that marked my first step into the world of tech.
                 </p>
                 <p>
-                  After graduating from BU in 2023, I joined an AI startup as a data analyst. Working there completely reshaped my path. Initially focused on data analysis and predictive modeling, I was soon drawn into the dynamic world of front-end component development, back-end microservices, and algorithm design—essentially taking on the role of a full-stack software engineer. Along the way, I discovered my passion for software engineering, front-end development, and cutting-edge AI technologies. My natural curiosity, love for learning new tools, and problem-solving mindset fueled my growth, and I feel incredibly fortunate to have found a career that I’m deeply passionate about and excited to explore further.
+                  After graduating from BU in 2023, I joined an AI startup as a data analyst. Working there completely reshaped my path. At the startup, my focus quickly shifted from pure reporting to building end-to-end machine learning solutions: framing problems with stakeholders, designing features, training and validating models, and shipping them behind real products. I worked across time-series forecasting, anomaly detection, and NLP/LLM use cases, where I learned to care equally about data quality, evaluation, and real-world impact. That journey cemented my passion for data science and applied machine learning. Curiosity, fast learning, and a problem-solving mindset have guided me ever since, and I’m excited to keep tackling business-critical problems with robust, measurable models.
                 </p>
                 <p>
                   If you're a potential employer intrigued by my story, feel free to download my resume to learn more. And if you’re curious about my project, have feedback, or want to collaborate, just send me an email—I’d love to hear from you!
@@ -129,9 +129,9 @@ export default function AboutMe() {
         <div className="grid grid-cols-1 pt-10 md:grid-cols-2 md:gap-12">
           {/* Contact Info - 1 */}
           <div className="space-y-4">
-            <ReactInfoItem label="Name:" value="Wanzhen Li" />
+            <ReactInfoItem label="Name:" value="Phoenix Li" />
             <ReactInfoItem label="Preferred Name:" value="Phoenix" />
-            <ReactInfoItem label="Email:" value="phinneyisamazing@gmail.com" />
+            <ReactInfoItem label="Email:" value="phinneyli0525@gmail.com" />
           </div>
 
           {/* Contact Info - 2 */}
