@@ -20,6 +20,8 @@ import aboutProfile from '../assets/images/about/headshot.jpg';
 import project1 from '../assets/images/projects/project1.jpg';
 import findocsRag from '../assets/images/projects/findocs_rag.jpg';
 import pictomercHero from '../assets/images/projects/pictomerch_hero.jpg';
+import portfolioWebsite from '../assets/images/projects/portfolio_website.jpg';
+import foxconnPL from '../assets/images/projects/foxconn_p&l.png';
 
 // Trusted by logos
 import mercedesLogo from '../assets/icons/trusted-by/mercedes-benz-seeklogo.png';
@@ -56,6 +58,8 @@ export const images = {
     project1,
     findocsRag,
     pictomercHero,
+    portfolioWebsite,
+    foxconnPL,
   },
   mercedesLogo,
   volkswagenLogo,

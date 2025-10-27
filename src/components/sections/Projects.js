@@ -23,19 +23,19 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "AI-Powered Chat Application",
-    description: "A real-time chat application built with React and OpenAI's GPT-4o API, featuring intelligent response generation and conversation memory.",
-    imageUrl: images.projects.project1,
-    techStack: ["React", "Node.js", "OpenAI API"],
-    slug: "ai-chat-application-3"
+    title: "My Portfolio Website",
+    description: "ssA modern React portfolio with reusable components, Tailwind styling, smooth routing, and accessible mobile navigation.",
+    imageUrl: images.projects.portfolioWebsite,
+    techStack: ["React", "Node.js", "Tailwind CSS", "LitElement", "Framer Motion"],
+    slug: "my-portfolio-website"
   },
   {
     id: 4,
-    title: "AI-Powered Chat Application",
-    description: "A real-time chat application built with React and OpenAI's GPT-4o API, featuring intelligent response generation and conversation memory.",
-    imageUrl: images.projects.project1,
-    techStack: ["React", "Node.js", "OpenAI API"],
-    slug: "ai-chat-application-4"
+    title: "Foxconn Longhua: P&L Forecasts & Product Mix",
+    description: "Cost/profit drivers, model-level unit economics, and 30-day profit forecasts.",
+    imageUrl: images.projects.foxconnPL,
+    techStack: ["Python", "Prophet", "SARIMA", "Holt-Winters", "TimeGPT"],
+    slug: "foxconn-longhua-forecasting"
   },
 ];
 

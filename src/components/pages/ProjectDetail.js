@@ -63,6 +63,77 @@ const projectsData = {
     </ul>`
   ]
 },
+  "foxconn-longhua-forecasting": {
+    title: "Foxconn Longhua: Daily P&L Forecasting and Product Mix Insights",
+    imageUrl: images.projects.foxconnPL,
+    techStack: ["Python", "pandas", "statsmodels", "Prophet", "Nixtla TimeGPT", "SQL"],
+    content: [
+      `<h2>Role and Stack</h2>
+      <p><strong>Role:</strong> Data modeler/analyst <br />
+      <strong>Stack:</strong> Python (pandas, statsmodels, Prophet), Nixtla TimeGPT, SQL, Excel, JarviX BI<br />
+      <strong>Focus:</strong> EDA, cost/profit drivers, time-series forecasting, product-level unit economics.</p>`,
+
+      `<h2>Project Overview</h2>
+      <p>This project began with a simple question from operations leadership at Foxconn’s Longhua site: Are we making more money over time, and which product lines are driving (or dragging) profitability?<br/>
+      I built an end-to-end analysis that cleans and integrates daily operational data, explains cost and profit drivers, and forecasts daily profit for the next 30 days. The output includes trend diagnostics, weekly seasonality, and concrete recommendations by department and product line.</p>`,
+
+      `<h2>Data & Method</h2>
+      <h3>Data sources</h3>
+      <ul>
+        <li>Daily revenue, cost, and profit (11 months)</li>
+        <li>Monthly labor cost by department</li>
+        <li>Product-level inbound/finish counts by model and month for Sharp and Logitech (logi)</li>
+      </ul>
+      <h3>Key preprocessing</h3>
+      <ul>
+        <li>Standardized product naming across 2023–2024 orders</li>
+        <li>Reconciled missing/irregular values (e.g., April logi cost gap)</li>
+        <li>Built a proportional allocation method to estimate model-level monthly labor cost and profit from plant totals: compute each model’s share of orders per month, multiply by monthly totals, aggregate across months, then divide by orders for per-order unit economics.</li>
+      </ul>`,
+
+      `<h2>Forecasting setup</h2>
+      <p><strong>Models:</strong> Prophet, SARIMA, Holt-Winters; zero-shot baseline with Nixtla TimeGPT.<br/>
+      <strong>Steps:</strong> time-series decomposition → fit/forecast → compare trajectory and weekly patterns → synthesize narrative for decisions.</p>`,
+
+      `<h2>What I Found (Highlights)</h2>
+      <ol>
+        <li><strong>Top-line trend is positive.</strong> Revenue trend +4,837.53/day; cost +3,771.52/day; profit +1,066.04/day. Growth is healthy and cost growth is controlled.</li>
+        <li><strong>Biggest profit lever is consumables.</strong> Consumable cost (especially on logi) has the strongest negative relationship with profit—larger than regular headcount. Prioritize consumable cost control for fastest lift.</li>
+        <li><strong>Departmental labor patterns.</strong> Regular shifts dominate labor cost; overtime concentrates on weekends. Assembly/Packaging bears largest absolute cost; SMT shows highest importance during regular attendance → target SMT for cost discipline. Warehouse/Logistics and QA carry most overtime.</li>
+        <li><strong>Product-level dynamics.</strong> Sharp: SX3 grows fastest and is most important to cost/profit. Logi: LT6 shows the clearest revenue rebound and best profitability after September; others trend similarly in cost.</li>
+        <li><strong>Unit economics (per order).</strong> Labor cost per order — highest OE4 ≈ 42.72; next KAG ≈ 28.07; lowest SX3 ≈ 15.55. Profit per order — highest SX3 ≈ 32.46; next KDD ≈ 25.25; OG6 ≈ 20.64. Loss-makers: OE6 (≈ –36.30), plus J3P, SXI, SX1, KAG.</li>
+      </ol>`,
+
+      `<h2>Forecasting: Next 30 Days</h2>
+      <ul>
+        <li><strong>Prophet:</strong> Gentle uptrend pre-Aug, strong rise post-Aug; weekly seasonality peaks on Wednesday, then Monday; declines toward Sunday.</li>
+        <li><strong>SARIMA:</strong> Confirms 7-day cycle and dip around October (holiday effect); forecast follows cyclical rise.</li>
+        <li><strong>Holt-Winters:</strong> Sensitive to very low values around January; produces conservative downward pull as approaching next January.</li>
+        <li><strong>TimeGPT:</strong> Zero-shot baseline capturing weekly oscillation with mild upward drift; useful external check.</li>
+      </ul>
+      <p><strong>Why multiple models?</strong> Different models encode different priors. Prophet and SARIMA agree on sustained weekly-cycle growth; Holt-Winters offers a conservative angle; TimeGPT provides an external baseline. Triangulation reduces model risk and strengthens the narrative.</p>`,
+
+      `<h2>2024 Monthly Profit Projection</h2>
+      <p>I combined 2024 monthly order volumes by model with 2023 per-order model profit from the unit-economics step. After cleaning near-duplicate model names (e.g., KDD-大礼包 → KDD), the projection shows: peak in January; decline Feb–Apr; rebound in May; dip in June; small rebound in July; gentle decline from August onward. Planning implication: push orders in April and post-June where the projection softens.</p>`,
+
+      `<h2>Recommendations</h2>
+      <ul>
+        <li>Attack consumable cost first (especially on logi).</li>
+        <li>Target SMT for cost discipline during regular shifts.</li>
+        <li>Scale winners (SX3; KDD/OG6; LT6) and fix/exit laggards (OE6; J3P/SXI/SX1/KAG if economics don’t improve).</li>
+        <li>Schedule with weekly seasonality: protect Wednesdays and Mondays; tighten weekends.</li>
+        <li>Sales focus by calendar: double down in April and post-June where projected profit dips.</li>
+      </ul>`,
+
+      `<h2>What This Shows About My Skills</h2>
+      <ul>
+        <li><strong>Analytical rigor:</strong> Built defensible unit economics from plant-level aggregates and order shares—useful, not over-promised precision.</li>
+        <li><strong>Modeling judgment:</strong> Triangulated Prophet/SARIMA/Holt-Winters with a TimeGPT baseline.</li>
+        <li><strong>Business translation:</strong> Turned statistics into actions—what to optimize, what to scale, and when to push sales.</li>
+        <li><strong>Communication:</strong> Summarized results for non-technical stakeholders with scenario-based recommendations.</li>
+      </ul>`
+    ]
+  },
   "findocs-rag-system": {
     title: "Building a Financial Document Q&A System with RAG",
     imageUrl: images.projects.findocsRag,
@@ -216,7 +287,64 @@ Data Center revenue reached $34,658 million...</code></pre>
             <li><strong>Evaluation:</strong> Custom framework with normalized matching</li>
         </ul>`
     ]
-}
+},
+  "my-portfolio-website": {
+    title: "My Portfolio Website — A React project I Built to Showcase My Work",
+    imageUrl: images.projects.portfolioWebsite,
+    techStack: ["React", "Node.js", "Tailwind CSS", "LitElement", "Framer Motion"],
+    content: [
+      `<h2>Project Overview</h2>
+      <p>I built this portfolio website from the ground up to demonstrate my frontend skills. It is a single-page application using React and client-side routing, with smooth in-page navigation, responsive layout, and a reusable component system. My focus was clean structure, accessibility, and maintainability.</p>`,
+
+      `<h2>What you see at a glance</h2>
+      <ul>
+        <li>A modern hero section with subtle animations and social links.</li>
+        <li>Clear sections for About, Skills, Education, Experience, and Projects.</li>
+        <li>A Projects grid that routes to dedicated detail pages via readable slugs.</li>
+        <li>A responsive header with smooth scrolling and an accessible mobile menu.</li>
+      </ul>`,
+
+      `<h2>Tech stack and key libraries</h2>
+      <ul>
+        <li>React 18 + React Router for SPA routing</li>
+        <li>Tailwind CSS for utility-first styling, plus CSS Modules where needed</li>
+        <li>Headless UI and Heroicons for accessible navigation and icons</li>
+        <li>Framer Motion for purposeful micro-animations</li>
+      </ul>`,
+
+      `<h2>Architecture and routing</h2>
+      <p>The app defines routes for the home page and dynamic project detail pages (e.g., <code>/projects/:slug</code>). The home route composes major sections: Hero, About, Skills, Education, Experience, and Projects. This keeps navigation fast and makes it easy to add new projects by extending data and content.</p>`,
+
+      `<h2>Component-driven UI and reusability</h2>
+      <p>I built reusable components for buttons, nav items, section titles, social links, and cards. The header uses Headless UI’s <code>Dialog</code> for a11y-friendly mobile navigation and adjusts appearance on scroll. The hero section mixes Tailwind utilities with a CSS Module for precise control, and Framer Motion supplies subtle entrance transitions.</p>`,
+
+      `<h2>Detail pages with rich content</h2>
+      <p>Each project has a dedicated page with a title, tech tags, hero image, and structured sections (overview, architecture, stack, highlights). Typography and spacing are scoped so long-form content reads well and stays consistent with the site’s design.</p>`,
+
+      `<h2>Navigation and UX polish</h2>
+      <ul>
+        <li>Smooth in-page scrolling for section anchors like <code>#about</code> and <code>#projects</code>.</li>
+        <li>If users are on a detail page, navigation smartly routes home before scrolling.</li>
+        <li>The mobile menu is focus-trapped and predictable, improving accessibility.</li>
+      </ul>`,
+
+      `<h2>Styling approach</h2>
+      <p>Tailwind provides consistent spacing, color, and typography tokens for speed and coherence. When a component needs special treatment (for example, the hero image mask), I add a small CSS Module. This hybrid approach balances iteration speed with fine-grained control.</p>`,
+
+      `<h2>Data and assets</h2>
+      <p>Static assets (logos, icons, images) live in an organized <code>assets</code> directory and are referenced through a central <code>images</code> constant. Project cards are driven by simple data with <code>slug</code> identifiers, so adding or reordering items doesn’t require layout changes.</p>`,
+
+      `<h2>Why this project matters</h2>
+      <p>This site demonstrates how I build production-quality frontends: component reuse, clear routing, accessible mobile behavior, and responsible animation. I aim for code that teams can maintain and evolve easily.</p>`,
+
+      `<h2>What I learned</h2>
+      <ul>
+        <li>Reliable patterns for routing between sectioned landing pages and dynamic detail pages.</li>
+        <li>A hybrid styling strategy (Tailwind + CSS Modules) that avoids global conflicts while staying productive.</li>
+        <li>How to design accessible mobile navigation with Headless UI and smooth anchor scrolling.</li>
+      </ul>`
+    ]
+  }
 };
 
 // HTML Rendering Function
