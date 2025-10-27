@@ -24,7 +24,7 @@ const projectsData = [
   {
     id: 3,
     title: "My Portfolio Website",
-    description: "ssA modern React portfolio with reusable components, Tailwind styling, smooth routing, and accessible mobile navigation.",
+    description: "A modern React portfolio with reusable components, Tailwind styling, smooth routing, and accessible mobile navigation.",
     imageUrl: images.projects.portfolioWebsite,
     techStack: ["React", "Node.js", "Tailwind CSS", "LitElement", "Framer Motion"],
     slug: "my-portfolio-website"
