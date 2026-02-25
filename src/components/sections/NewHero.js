@@ -6,13 +6,13 @@ import { motion } from 'framer-motion';
 
 export default function NewHero() {
   const fadeInUp = {
-    initial: { 
-      opacity: 0, 
-      y: 20 
+    initial: {
+      opacity: 0,
+      y: 20
     },
-    animate: { 
-      opacity: 1, 
-      y: 0 
+    animate: {
+      opacity: 1,
+      y: 0
     }
   };
 
@@ -29,12 +29,12 @@ export default function NewHero() {
           md:grid-cols-[1.2fr_1fr] md:gap-x-8 md:gap-y-0
           lg:grid-cols-[1.2fr_1fr_1.2fr] lg:gap-x-12 md:items-start">
           {/* Left Column */}
-          <motion.div 
+          <motion.div
             className="flex flex-col items-center md:items-start text-center md:text-left"
             initial="initial"
             animate="animate"
           >
-            <motion.div 
+            <motion.div
               className="flex items-center gap-3 mb-6"
               variants={fadeInUp}
               transition={{ duration: 0.5 }}
@@ -42,7 +42,7 @@ export default function NewHero() {
               <img src={images.icons.handWave} alt="" className="h-8" />
               <span className="text-lg">Hey, My name is</span>
             </motion.div>
-            <motion.h1 
+            <motion.h1
               className={styles.heroTitle}
               variants={fadeInUp}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -56,18 +56,18 @@ export default function NewHero() {
             <motion.div
               className="w-full h-full"
               initial={{ opacity: 0, scale: 1.1, borderRadius: '100%' }}
-              animate={{ 
-                opacity: 1, 
+              animate={{
+                opacity: 1,
                 scale: 1,
                 borderRadius: '100px'
               }}
-              transition={{ 
+              transition={{
                 duration: 0.8,
                 delay: 0.3,
                 ease: "easeOut"
               }}
             >
-              <img 
+              <img
                 src={images.hero.mainImage}
                 alt="Profile"
                 className={styles.heroImage}
@@ -81,7 +81,7 @@ export default function NewHero() {
               <div>
                 <p className="sm:text-2xl text-lg mb-2 text-secondary">I am a</p>
                 <h2 className="sm:text-6xl text-4xl font-serif font-bold">
-                   <span className={styles.highlightedText}>
+                  <span className={styles.highlightedText}>
                     <svg
                       aria-hidden="true"
                       viewBox="0 0 418 42"
@@ -96,20 +96,20 @@ export default function NewHero() {
               </div>
               <div className="space-y-4">
                 {/* TODO: WEB DEVELOPER SHOULD BE REVISITED! */}
-                <p className="sm:text-2xl text-lg text-secondary">Machine learning engineer, AI engineer，web developer, data analyst...</p>
+                <p className="sm:text-2xl text-lg text-secondary">Machine learning engineer, AI engineer, web developer, data analyst...</p>
                 <p className="sm:text-2xl text-lg text-secondary">
-                Passionate about transforming ideas into impactful web and AI solutions. Fueled by curiosity and a love for solving complex challenges.
+                  Passionate about transforming ideas into impactful web and AI solutions. Fueled by curiosity and a love for solving complex challenges.
                 </p>
               </div>
             </div>
-            
+
             {/* Social Links */}
             <div className="flex gap-8 mt-12 justify-center md:justify-start">
-              <ReactSocialLink 
+              <ReactSocialLink
                 href="https://linkedin.com/in/wzli-bu"
                 icon={images.icons.social.linkedin}
               />
-              <ReactSocialLink 
+              <ReactSocialLink
                 href="https://github.com/WanzhenLi/FinDocs-RAG"
                 icon={images.icons.social.github}
               />

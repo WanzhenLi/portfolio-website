@@ -28,8 +28,20 @@ const experienceData = {
   experiences: [
     {
       title: "Data Scientist",
+      company: "Arctura AI",
+      period: "Jan 2026 - Present",
+      description: "H1B Sponsored",
+      bulletPoints: [
+        "Designed and shipped end-to-end AI product MVPs at speed,from market research and product ideation to UI design, web app development, and DevOps deployment,covering the full product lifecycle with hands-on ownership of front-end, back-end, and cloud infrastructure.",
+        "Evaluated LLMs and vision models; engineered prompts and built RAG pipelines to optimize accuracy and cost; automated image-processing workflows using n8n to reduce manual effort and accelerate delivery.",
+        "Leveraged Vercel, Supabase, and WordPress to rapidly prototype and deploy production-ready MVPs, enabling fast iteration cycles and measurable outcomes for clients.",
+        "Collaborated closely with clients and cross-functional stakeholders to translate business requirements into technical solutions, ensuring alignment from discovery through delivery."
+      ]
+    },
+    {
+      title: "Data Scientist",
       company: "Synergies Intelligent Systems, Inc.",
-      period: "Mar 2024 - Present",
+      period: "Mar 2024 - Jan 2026",
       description: "",
       bulletPoints: [
         "Worked with product and client stakeholders to frame AI problems, Reviewed papers and open-source repos, tested candidate models, and chose cost-effective, quick-to-deploy solutions; shipped week-scale MVPs to prove feasibility before full builds.",
@@ -90,7 +102,7 @@ export default function Experiences() {
     <section id="experience" className="py-5 sm:py-10">
       <div className="section-container">
         <ReactSectionTitle title="Work Experience" />
-        
+
         <div className="pt-10 grid grid-cols-1 xl:grid-cols-[1fr_1.8fr] lg:grid-cols-1 gap-6 lg:gap-8 xl:gap-16">
           {/* Left Column - Info Cards */}
           <div className="grid grid-cols-1 sm:pt-6 sm:grid-cols-2 gap-8 sm:gap-10 h-fit pl-2 sm:pl-0">
