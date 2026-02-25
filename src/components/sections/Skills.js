@@ -5,17 +5,27 @@ const skillsData = [
   {
     title: "Programming Languages",
     icon: "👩‍💻",
-    description: "Python · JavaScript · R · SQL"
+    description: "JavaScript · MATLAB · Python · R · SQL"
   },
   {
-    title: "Machine Learning",
+    title: "Testing",
+    icon: "🛠️ ",
+    description: "QUnit · Karma · Playwright · Jest · MATLAB Unit Tests"
+  },
+  {
+    title: "Front-end & Platforms",
+    icon: "🎨",
+    description: "React · LitElement · HTML5/CSS · TailwindCSS · Framer Motion · Shopify · WordPress · Figma"
+  },
+  {
+    title: "AI Engineering",
     icon: "🤖",
-    description: "PyTorch · TensorFlow · scikit-learn · Prophet"
+    description: "LLM · RAG · Agents · MCP · LangChain/LangGraph · HuggingFace · ChromaDB · Dify · PyTorch · TensorFlow · scikit-learn · Prophet"
   },
   {
-    title: "LLM & NLP",
-    icon: "🧠",
-    description: "RAG · LangChain/LangGraph · HuggingFace · ChromaDB · Dify"
+    title: "Analytics & BI",
+    icon: "📊",
+    description: "Power BI · Tableau"
   },
   {
     title: "Data Engineering & Databases",
@@ -28,11 +38,6 @@ const skillsData = [
     description: "Node.js · Next.js · FastAPI · Flask · Streamlit"
   },
   {
-    title: "Front-end & Platforms",
-    icon: "🎨",
-    description: "React · LitElement · HTML5/CSS · TailwindCSS · Framer Motion · Shopify · WordPress · Figma"
-  },
-  {
     title: "Cloud & Hosting",
     icon: "☁️",
     description: "AWS (S3, EC2) · GCP · Vercel · Render · Supabase · Hostinger"
@@ -41,11 +46,6 @@ const skillsData = [
     title: "DevOps",
     icon: "🚀",
     description: "Docker · Git/GitHub Actions · CI/CD · Microservices · Serverless · Jira"
-  },
-  {
-    title: "Analytics & BI",
-    icon: "📊",
-    description: "Tableau · Power BI"
   }
 ];
 
@@ -60,7 +60,7 @@ export default function Skills() {
     <section id="skills" className="py-10 sm:py-16 scroll-mt-20">
       <div className="section-container">
         <ReactSectionTitle title="My Skills" />
-        
+
         {/* Skills Grid - 9 skills in 3x3 layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 pt-10">
           {skillsData.map((skill, index) => (
@@ -82,7 +82,7 @@ export default function Skills() {
             </div>
             <div className="space-y-1">
               {certifications.map((cert, index) => (
-                <div 
+                <div
                   key={index}
                   className="flex items-start gap-3 text-secondary text-base font-poppins leading-relaxed"
                 >

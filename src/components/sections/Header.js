@@ -56,7 +56,7 @@ export default function Header() {
   const handleLogoClick = (e) => {
     e.preventDefault();
     setMobileMenuOpen(false);
-    
+
     if (location.pathname !== '/') {
       navigate('/', { replace: true });
     } else {
@@ -65,9 +65,8 @@ export default function Header() {
   };
 
   return (
-    <header className={`fixed w-full z-50 transition-colors duration-300 ${
-      isScrolled ? 'bg-white/80 backdrop-blur-sm shadow-sm' : 'bg-transparent'
-    }`}>
+    <header className={`fixed w-full z-50 transition-colors duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+      }`}>
       <nav className="section-container flex items-center justify-between py-3 sm:py-1" aria-label="Global">
         {/* Logo */}
         <div className="flex">
@@ -93,7 +92,7 @@ export default function Header() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')}>
+          <a href="mailto:phinneyli0525@gmail.com">
             <ReactButton
               variant="nav"
               label="Let's talk"
@@ -150,7 +149,7 @@ export default function Header() {
                 ))}
               </div>
               <div className="py-4">
-                <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')}>
+                <a href="mailto:phinneyli0525@gmail.com" onClick={() => setMobileMenuOpen(false)}>
                   <ReactButton
                     variant="nav"
                     label="Let's talk"
